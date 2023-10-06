@@ -1,7 +1,7 @@
 // src/App.js
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"; // Import 'Routes' from react-router-dom
-
+import "./App.css";
 import StudentSignup from "./components/StudentSignup";
 import AdminSignup from "./components/AdminSignup";
 import DepartmentSignup from "./components/DepartmentSignup";
@@ -10,17 +10,25 @@ function App() {
   return (
     <Router>
       <nav>
+        <div classname="list">
         <ul>
           <li>
-            <Link to="/student">Student Signup</Link>
+            <div classname="option">
+            <Link to="/student">Student</Link>
+            </div>
           </li>
           <li>
-            <Link to="/admin">Admin Signup</Link>
+            <div classname="option">
+            <Link to="/admin">Admin</Link>
+            </div>
           </li>
           <li>
-            <Link to="/department">Department Signup</Link>
+            <div classname="option">
+            <Link to="/department">Department</Link>
+            </div>
           </li>
         </ul>
+        </div> 
       </nav>
       
       {/* Use 'Routes' to define your route configuration */}

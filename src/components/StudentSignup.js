@@ -13,10 +13,10 @@ function StudentSignup() {
 
   return (
     <div class="contactPage">
-     <div>
-      <h1>Student SignIn</h1>
-      <div classname="form">
+     <div classname="Formcontainer">
       <form>
+      <h1>Student SignIn</h1>
+      <div classname="innerform">
         <div classname="field">
         <label>Student ID</label>
         <input
@@ -36,8 +36,8 @@ function StudentSignup() {
             />
         </div>
         <button type="submit" >SignIn</button>
+      </div>
       </form>
-    </div>
     </div>
     </div>
   );

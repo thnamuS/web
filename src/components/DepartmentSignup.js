@@ -1,54 +1,51 @@
 // src/components/DepartmentSignup.js
+import "./StudentSignup.css";
 import React, { useState } from "react";
 
 function DepartmentSignup() {
-  const [formData, setFormData] = useState({
-    departmentName: "",
-    email: "",
-    password: "",
-  });
+  const [DID, setDID] = useState("");
+  const [mail, setmail] = useState("");
+  const [Password, setPassword] = useState("");
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle department signup logic (e.g., send data to a server)
-    console.log("Department Signup Data:", formData);
-  };
-
+  
+  
   return (
-    <div>
-      <h2>Department Signup</h2>
-      <form onSubmit={handleSubmit}>
+    <div class="contactPage">
+     <div classname="Formcontainer">
+      <form>
+      <h1>Department SignIn</h1>
+      <div classname="innerform">
+        <div classname="field">
+        <label>Department Name</label>
         <input
           type="text"
-          name="departmentName"
-          placeholder="Department Name"
-          value={formData.departmentName}
-          onChange={handleChange}
+          name="DID"
+          value={DID}
+          onChange={(e) => setDID(e.target.value)}
         />
+        </div>
+        <div classname="field">
+        <label>Email</label>
         <input
           type="email"
           name="email"
-          placeholder="Email"
-          value={formData.email}
-          onChange={handleChange}
+          value={mail}
+          onChange={(e) => setmail(e.target.value)}
         />
-        <input
-          type="password"
-          name="password"
-          placeholder="Password"
-          value={formData.password}
-          onChange={handleChange}
-        />
-        <button type="submit">Signup</button>
+        </div>
+        <div classname="field">
+            <label>password</label>
+            <input
+            type="password"
+            name="password"
+            value={Password}
+            onChange={(e) => setPassword(e.target.value)}
+            />
+        </div>
+        <button type="submit" >SignIn</button>
+      </div>
       </form>
+    </div>
     </div>
   );
 }
