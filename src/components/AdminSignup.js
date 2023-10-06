@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-//import "./AdminSignIn.css"; // Import your CSS file
+import "./StudentSignup.css"; // Import your CSS file
+
 
 function AdminSignup() {
   const [adminID, setAdminID] = useState("");

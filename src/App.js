@@ -9,28 +9,21 @@ import DepartmentSignup from "./components/DepartmentSignup";
 function App() {
   return (
     <Router>
-      <nav>
-        <div classname="list">
-        <ul>
+      <div id="main">
+      <nav class="navbar navbar-default">
+        <ul class="nav navbar-nav">
           <li>
-            <div classname="option">
             <Link to="/student">Student</Link>
-            </div>
           </li>
           <li>
-            <div classname="option">
             <Link to="/admin">Admin</Link>
-            </div>
           </li>
           <li>
-            <div classname="option">
             <Link to="/department">Department</Link>
-            </div>
           </li>
         </ul>
-        </div> 
       </nav>
-      
+      </div>
       {/* Use 'Routes' to define your route configuration */}
       <Routes>
         <Route path="/student" element={<StudentSignup />} />
