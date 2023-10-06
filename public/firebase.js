@@ -26,9 +26,6 @@ function writeUserData(userId, name, email,com,result) {
     
   });
 }
-writeUserData('S101',"Ash","asreethp@gmail.com","Wipro","Pending")
-writeUserData('S102',"Sum","sum@gmail.com","Wipro","Accept")
-writeUserData('S103',"Viv","vivp@gmail.com","Wipro","Accept")
-writeUserData('S104',"Shak","shak@gmail.com","Wipro","Pending")
+
 
 export default { app,auth };
