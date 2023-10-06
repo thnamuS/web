@@ -1,10 +1,31 @@
-.list{
-  display:flex;
-  flex-direction: row;
-  
+/* Add this CSS in your stylesheet or within a <style> tag in your component */
+.navbar {
+  background-color: #333; /* Set the background color */
+  color: #fff; /* Set text color */
 }
 
-nav{
-  display:flex;
-  flex-direction: row;
+.navbar a {
+  font-size: 50px;
+  font: italic;
+  color: #fff; /* Set link text color */
+  text-decoration: none; /* Remove underlines from links */
+}
+
+.navbar ul.nav.navbar-nav {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  list-style: none; /* Remove list bullets */
+  align-items: center;
+  padding-left:23%;
+}
+
+.navbar ul.nav.navbar-nav li {
+  display: inline-block; /* Display list items horizontally */
+  padding: 5px 30px 5px 30px;
+  margin: 20px;
+   /* Add spacing between list items */
+}
+
+.container {
+  text-align: center; /* Center the content within the container */
 }
